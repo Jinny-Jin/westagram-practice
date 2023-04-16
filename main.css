@@ -1,0 +1,278 @@
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  height: 50px;
+  padding: 5px 150px 0 150px;
+  border-bottom: 1px solid rgb(209, 206, 206);
+}
+
+/*compass~user 아이콘*/
+.icons i {
+  margin-left: 25px;
+}
+
+i.fa-regular {
+  position: relative;
+  top: 4px;
+}
+
+/*instagram 아이콘*/
+i.fa-instagram {
+  position: relative;
+  bottom: 4px;
+  margin-right: 20px;
+}
+
+/*westagram*/
+.insta span {
+  padding-left: 20px;
+  border-left: 2px solid black;
+  font-family: "Lobster", cursive;
+  font-size: 25px;
+}
+
+/*검색창*/
+input {
+  width: 230px;
+  padding: 5px 15px;
+  border: 1px solid rgb(209, 206, 206);
+  border-radius: 3px;
+}
+
+input.searching::placeholder {
+  color: rgb(209, 206, 206);
+  text-align: center;
+}
+
+.search {
+  position: relative;
+  margin-top: 4px;
+}
+
+i.fa-solid {
+  position: absolute;
+  left: 85px;
+  top: 13px;
+  color: rgb(209, 206, 206);
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 40px 100px 0px 100px;
+}
+
+/*feeds 전체 테두리*/
+div.feeds {
+  position: relative;
+  bottom: 10px;
+  width: 550px;
+  height: 830px;
+  border: 1px solid rgb(192, 191, 191);
+  border-radius: 3px;
+}
+
+/*위코드 프로필*/
+
+div.me-profile img {
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+  border-radius: 70%;
+  overflow: hidden;
+}
+
+.me-profile {
+  position: relative;
+  display: flex;
+  height: 50px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+/*위코드 ID*/
+.me-Id {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3px;
+}
+
+span.me-name {
+  font-weight: bold;
+}
+
+span.me-desc {
+  position: absolute;
+  top: 23px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+div.dots {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 16px;
+  height: 10px;
+  background-image: url(./image/instagram\ icon.png);
+  background-position: -58px -372px;
+}
+
+/*피드 이미지*/
+
+.me-fid img {
+  width: 550px;
+  height: 550px;
+}
+
+/*하단 아이콘들*/
+.bottom-icon {
+  position: relative;
+  display: flex;
+  height: 30px;
+}
+
+.bottom-icon img {
+  width: 25px;
+  height: 25px;
+  margin-left: 5px;
+}
+
+/*하트 이미지 테두리 빨간색으로 바꾸기
+.bottom-icon .heart-icon {
+  filter: invert(14%) sepia(86%) saturate(7031%) hue-rotate(1deg)
+    brightness(97%) contrast(120%);
+}*/
+
+/*comment 좌우반전*/
+.comment {
+  transform: scaleX(-1);
+}
+
+.scrap {
+  position: absolute;
+  right: 10px;
+  width: 25px;
+  height: 20px;
+}
+
+.bottom-icon button {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  margin-left: 5px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+}
+
+.bottom-icon button img.heart-icon {
+  margin-left: 0;
+}
+
+/*~이 좋아합니다*/
+.likey {
+  position: relative;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.likey img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  border-radius: 70%;
+}
+
+span.like-comment {
+  position: absolute;
+  bottom: 5px;
+}
+
+span.bold {
+  font-weight: bold;
+}
+
+/*나 핫걸~*/
+div.fid-comment {
+  margin-left: 15px;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.time {
+  color: rgb(163, 163, 163);
+  font-size: 13px;
+}
+
+.comment1 {
+  position: relative;
+}
+
+img.small-heart {
+  width: 15px;
+  height: 15px;
+  /*filter: invert(86%) sepia(12%) saturate(13%) hue-rotate(320deg)
+    brightness(83%) contrast(81%);*/
+}
+
+.comment-heart {
+  position: absolute;
+  right: 10px;
+  padding: 2px 0 0 0;
+  background-color: rgb(255, 255, 255);
+  border: none;
+}
+
+/*댓글 창*/
+div.commentary {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+}
+
+.commentary input {
+  width: 548px;
+  padding: 13px 15px;
+  border: none;
+  border-top: 1px solid rgb(192, 191, 191);
+}
+
+.commentary input::placeholder {
+  color: rgb(182, 181, 181);
+  font-weight: bold;
+}
+
+/*게시 버튼*/
+button#게시 {
+  position: absolute;
+  top: 12px;
+  right: 7px;
+  color: rgb(117, 209, 245);
+  background-color: rgb(255, 255, 255);
+  border: none;
+}
+
+/*댓글 창 javascript에서 클래스 주는 용도*/
+
+.js {
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.for-js {
+  padding-left: 5px;
+  font-size: 15px;
+}
+
+.js-heart {
+  /*position: absolute;
+  top: 4px;
+  right: 10px;*/
+  filter: invert(86%) sepia(12%) saturate(13%) hue-rotate(320deg)
+    brightness(83%) contrast(81%);
+}

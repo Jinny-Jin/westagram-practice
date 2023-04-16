@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+/*오른쪽 전체*/
+.main-right {
+  position: relative;
+  width: 350px;
+  height: 700px;
+}
+
+/*오른쪽 al_zar 프로필*/
+.right-me {
+  display: flex;
+  height: 50px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+}
+
+.right-me img {
+  width: 50px;
+  height: 50px;
+  border-radius: 70%;
+}
+
+.right-me span {
+  margin-left: 10px;
+}
+
+span.me-desc2 {
+  position: absolute;
+  top: 25px;
+  left: 50px;
+}
+
+/*모두 보기 버튼*/
+
+button.모두_보기 {
+  position: absolute;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+li {
+  position: relative;
+}
+
+/*스토리&회원님을 위한 추천 글자 색 변경*/
+span.right-top {
+  color: rgb(146, 141, 141);
+}
+
+/*스토리 피드*/
+
+/*스토리 & 회원 추천 공통 테두리*/
+.story-feed,
+.recommend-feed {
+  position: relative;
+  margin-bottom: 15px;
+  padding: 15px 15px 0 15px;
+  border: 2px solid rgb(223, 222, 222);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.story-feed {
+  height: 250px;
+}
+
+.story-feed ul {
+  padding-left: 0;
+}
+
+/*회원 목록 공통 style 적용*/
+.story-feed ul li,
+.recommend-list ul li {
+  display: flex;
+  margin-bottom: 13px;
+  list-style: none;
+}
+
+/*스토리 이미지 & 테두리 색*/
+.story-people li img {
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+  padding: 2px;
+  background-image: linear-gradient(#fff, #fff),
+    linear-gradient(200deg, rgb(255, 0, 162) 0%, orange 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  border: 2px solid transparent;
+  border-radius: 70%;
+}
+
+span.profile {
+  font-weight: bold;
+}
+
+/*위스타 ID 밑 글씨 공통 적용*/
+.story-time,
+.recommend-follow {
+  position: absolute;
+  left: 55px;
+  top: 21px;
+  color: rgb(146, 141, 141);
+}
+
+/*회원 추천 피드*/
+
+.recommend-feed {
+  height: 230px;
+}
+
+.recommend-feed ul {
+  padding-left: 0;
+}
+
+.recommend-list li img {
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+  border-radius: 70%;
+}
+
+/* 팔로우 버튼*/
+
+button.follow {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  color: rgba(70, 158, 241, 255);
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+footer {
+  color: rgb(146, 141, 141);
+  font-size: 15px;
+}
